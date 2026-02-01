@@ -8,11 +8,11 @@ body{
 .HeaderColumnLeft {
     background-image:url('Images/HotBeansLogo5.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto 90%;
     background-position: center;
     float: left;
-    width:10%;
-    height:25vh;
+    width: 10%;
+    height: 25vh;
 }
 
 
