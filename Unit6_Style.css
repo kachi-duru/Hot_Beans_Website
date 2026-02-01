@@ -150,7 +150,7 @@ li {
   }
 
   .HeaderColumnLeft {
-    height: 120px;                 /* fixes tiny logo */
+    height: 2000px;                 /* fixes tiny logo */
     background-size: contain;
     background-position: center;
   }
