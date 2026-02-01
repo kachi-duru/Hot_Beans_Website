@@ -134,13 +134,14 @@ li {
 }
 
 
+
 @media screen and (max-width: 768px) {
 
-  /* Prevent sideways scrolling from oversized vh widths */
-  html, body { overflow-x: hidden; }
-  body { margin: 8px; }
+  html, body {
+    overflow-x: hidden;
+  }
 
-  /* HEADER: stack nicely */
+  /* HEADER */
   .HeaderColumnLeft,
   .HeaderColumnRight {
     float: none;
@@ -148,62 +149,56 @@ li {
     height: auto;
   }
 
-  .HeaderColumnLeft{
-    height: 90px;                 /* fixed height on mobile */
+  .HeaderColumnLeft {
+    height: 120px;                 /* fixes tiny logo */
+    background-size: contain;
     background-position: center;
-    background-size: contain;     /* logo fits */
   }
 
-  .HeaderTitle { font-size: 28px; }
-  .HeaderText  { font-size: 14px; }
+  .HeaderTitle {
+    font-size: 28px;
+  }
 
-  /* NAV: stop cramping, make links full width */
+  .HeaderText {
+    font-size: 14px;
+  }
+
+  /* NAV */
   .topnav a {
     float: none;
     display: block;
-    width: auto;
-    padding: 12px 14px;
+    width: 100%;
+    padding: 12px;
     font-size: 16px;
     text-align: left;
   }
 
-  
-  .columnLeft,
-  .columnCentre,
-  .columnRight {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-  }
-
-  
+  /* FOOTER (stops sideways scroll) */
   .footer {
     margin-left: 0;
     width: 100%;
-    height: auto;
   }
 
-  
-  table { width: 100%; border-collapse: collapse; }
-  tr, td { display: block; width: 100%; }
-
-  table img {
-    max-width: 100%;
-    height: auto;
+  /* TABLE LAYOUT FIX */
+  table {
     width: 100%;
   }
 
-  /* Make the employee text readable */
-  td[style*="font-size"] {
-    font-size: 16px !important;
-    line-height: 1.4;
+  tr, td {
+    display: block;
+    width: 100%;
   }
 
-  /* SOCIAL ICONS: stop them going off screen */
-  table:last-of-type img {
-    width: 64px;
-    height: 64px;
+  /* IMAGES */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* VIDEO */
+  video, iframe {
+    max-width: 100%;
+    height: auto;
   }
 }
 
