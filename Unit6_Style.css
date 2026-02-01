@@ -134,11 +134,79 @@ li {
 }
 
 
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
+@media screen and (max-width: 768px) {
+
+  /* Prevent sideways scrolling from oversized vh widths */
+  html, body { overflow-x: hidden; }
+  body { margin: 8px; }
+
+  /* HEADER: stack nicely */
+  .HeaderColumnLeft,
+  .HeaderColumnRight {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .HeaderColumnLeft{
+    height: 90px;                 /* fixed height on mobile */
+    background-position: center;
+    background-size: contain;     /* logo fits */
+  }
+
+  .HeaderTitle { font-size: 28px; }
+  .HeaderText  { font-size: 14px; }
+
+  /* NAV: stop cramping, make links full width */
+  .topnav a {
+    float: none;
+    display: block;
+    width: auto;
+    padding: 12px 14px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  
+  .columnLeft,
+  .columnCentre,
+  .columnRight {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  
+  .footer {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  
+  table { width: 100%; border-collapse: collapse; }
+  tr, td { display: block; width: 100%; }
+
+  table img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+
+  /* Make the employee text readable */
+  td[style*="font-size"] {
+    font-size: 16px !important;
+    line-height: 1.4;
+  }
+
+  /* SOCIAL ICONS: stop them going off screen */
+  table:last-of-type img {
+    width: 64px;
+    height: 64px;
+  }
 }
+
 
 .Error{
 color:red;
