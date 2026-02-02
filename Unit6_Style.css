@@ -139,7 +139,7 @@ li {
 
 @media screen and (max-width: 768px) {
 
-  /* STOP HEADER OVERLAP */
+  /* stack the header instead of floating */
   .HeaderColumnLeft,
   .HeaderColumnRight {
     float: none;
@@ -147,30 +147,40 @@ li {
     height: auto;
   }
 
-  .HeaderColumnLeft {
-    display: block;
-    background-position: center;
+  .HeaderRow {
+    overflow: hidden; /* forces proper layout flow */
   }
 
-  .HeaderColumnRight {
-    display: block;
-    clear: both;
-  }
-
-  /* STOP CONTENT HIDING BEHIND IMAGES/VIDEO */
-  img, video {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 16px;
-  }
-
+  /* make tables behave vertically */
   table, tr, td {
     display: block;
     width: 100%;
   }
 
+  /* stop text running behind images/video */
+  img, video, iframe {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* stop vh-based columns breaking mobile */
+  .columnLeft,
+  .columnCentre,
+  .columnRight {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  /* footer safety */
+  .footer {
+    margin-left: 0;
+    width: 100%;
+  }
+
 }
+
 
 
 
