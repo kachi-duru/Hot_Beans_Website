@@ -139,24 +139,35 @@ li {
 
 @media screen and (max-width: 768px) {
 
-  html, body {
-    overflow-x: hidden;
+  /* STOP HEADER OVERLAP */
+  .HeaderColumnLeft,
+  .HeaderColumnRight {
+    float: none;
+    width: 100%;
+    height: auto;
   }
 
-  .columnCentre,
-  .columnLeft,
-  .columnRight {
-    width: 100%;
+  .HeaderColumnLeft {
+    display: block;
+    background-position: center;
+  }
+
+  .HeaderColumnRight {
+    display: block;
+    clear: both;
+  }
+
+  /* STOP CONTENT HIDING BEHIND IMAGES/VIDEO */
+  img, video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 16px;
   }
 
   table, tr, td {
     display: block;
     width: 100%;
-  }
-
-  img, video {
-    max-width: 100%;
-    height: auto;
   }
 
 }
