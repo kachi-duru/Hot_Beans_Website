@@ -139,22 +139,23 @@ li {
 
 @media screen and (max-width: 768px) {
 
-  /* stack the header instead of floating */
-  .HeaderColumnLeft,
-.HeaderColumnRight {
-  float: none;
-  width: 100%;
-}
+  .HeaderColumnLeft {
+    float: none;
+    width: 100%;
+    height: 25vh; /* same as desktop */
+    background-image: url('Images/HotBeansLogo5.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
 
-.HeaderColumnLeft {
-  height: 25vh;              /* keeps logo visible */
-  background-position: center;
-  background-repeat: no-repeat;
-}
+  .HeaderColumnRight {
+    float: none;
+    width: 100%;
+    clear: both;      /* THIS is the key line */
+    height: auto;
+  }
 
-.HeaderColumnRight {
-  height: auto;
-}
 
 
   .HeaderRow {
