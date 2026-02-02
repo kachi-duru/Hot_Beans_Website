@@ -8,12 +8,11 @@ body{
 .HeaderColumnLeft {
     background-image:url('Images/HotBeansLogo5.png');
     background-repeat: no-repeat;
-    background-size: auto 90%;
-    background-position: center;
     float: left;
-    width: 10%;
-    height: 25vh;
+    width:10%;
+    height:25vh;
 }
+
 
 
 
@@ -144,66 +143,24 @@ li {
     overflow-x: hidden;
   }
 
-  /* HEADER */
-  .HeaderColumnLeft,
-  .HeaderColumnRight {
-    float: none;
-    width: 100%;
-    height: auto;
-  }
-
-  .HeaderColumnLeft {
-    width: 100%;
-    height: 140px;              /* actual visible logo size */
-    background-size: contain;
-  }
-
-  .HeaderTitle {
-    font-size: 28px;
-  }
-
-  .HeaderText {
-    font-size: 14px;
-  }
-
-  /* NAV */
-  .topnav a {
-    float: none;
-    display: block;
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    text-align: left;
-  }
-
-  /* FOOTER (stops sideways scroll) */
-  .footer {
-    margin-left: 0;
+  .columnCentre,
+  .columnLeft,
+  .columnRight {
     width: 100%;
   }
 
-  /* TABLE LAYOUT FIX */
-  table {
-    width: 100%;
-  }
-
-  tr, td {
+  table, tr, td {
     display: block;
     width: 100%;
   }
 
-  /* IMAGES */
-  img {
+  img, video {
     max-width: 100%;
     height: auto;
   }
 
-  /* VIDEO */
-  video, iframe {
-    max-width: 100%;
-    height: auto;
-  }
 }
+
 
 
 .Error{
