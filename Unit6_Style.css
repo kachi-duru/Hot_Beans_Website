@@ -147,13 +147,15 @@ li {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    display: block;
   }
 
   .HeaderColumnRight {
     float: none;
     width: 100%;
-    clear: both;      /* THIS is the key line */
+    clear: both;      
     height: auto;
+    display: block;
   }
 
 
