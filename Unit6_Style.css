@@ -141,11 +141,21 @@ li {
 
   /* stack the header instead of floating */
   .HeaderColumnLeft,
-  .HeaderColumnRight {
-    float: none;
-    width: 100%;
-    height: auto;
-  }
+.HeaderColumnRight {
+  float: none;
+  width: 100%;
+}
+
+.HeaderColumnLeft {
+  height: 25vh;              /* keeps logo visible */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.HeaderColumnRight {
+  height: auto;
+}
+
 
   .HeaderRow {
     overflow: hidden; /* forces proper layout flow */
